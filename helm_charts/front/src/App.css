@@ -1,0 +1,123 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom right, #dbeafe, #e9d5ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: #4b5563; 
+}
+
+.card.two-column-card {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 1000px;
+  max-width: 90vw;
+  min-height: 500px;
+  color: #4b5563;
+}
+
+.card-column {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    
+  align-items: center;       
+  text-align: center;         
+  color: #4b5563;
+}
+
+.left-column {
+  background-color: #f3f4f6;
+  align-items: center;
+}
+
+.right-column {
+  text-align: center;
+}
+
+.preview-large {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 1rem;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.preview-placeholder {
+  width: 250px;
+  height: 250px;
+  background-color: #e5e7eb;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: #6366f1;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+.custom-file-upload:hover {
+  background-color: #4f46e5;
+}
+
+
+input[type="file"] {
+  margin-top: 1rem;
+  color: #4b5563;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #6366f1;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #6366f1;
+  color: white;
+  border-radius: 0.5rem;
+}
